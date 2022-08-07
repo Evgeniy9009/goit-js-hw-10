@@ -20,7 +20,7 @@ function handleInput() {
             
             console.log(countries.length)
             if (countries.length > 10) {
-                return Notiflix.Notify.success('Too many matches found. Please enter a more specific name.');
+                return Notiflix.Notify.info('Too many matches found. Please enter a more specific name.');
             } else if (countries.length < 11 && countries.length > 1) {
                 return renderList(countries)
             } else if (countries.length = 1) {
